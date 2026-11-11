@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ที่ปรึกษาทรัพย์ — ระบบเลือกบ้านในเครื่อง</title>
+  <title>AI ช่วยเลือกทรัพย์ — หา AI model ให้ GHB Home Center</title>
   <meta name="description" content="เอกสารแนะนำระบบช่วยเลือกทรัพย์บ้านมือสองของ GHB Home Center ที่รันในเครื่องของธนาคาร">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f3eee4'/%3E%3Cpath d='M12 30 L32 14 L52 30 V50 H12Z' fill='%23fffdf8' stroke='%231c2430' stroke-width='3'/%3E%3Cpath d='M10 30 L32 12 L54 30' fill='none' stroke='%23e25b1a' stroke-width='4'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
           <path d="M12 32 L32 16 L52 32 V50 H12Z" fill="#fffdf8" stroke="#1c2430" stroke-width="3"/>
           <path d="M10 32 L32 14 L54 32" fill="none" stroke="#e25b1a" stroke-width="4"/>
         </svg>
-        <span>ที่ปรึกษาทรัพย์<small>สำหรับทีม GHB Home Center</small></span>
+        <span>AI ช่วยเลือกทรัพย์<small>หา AI model ให้ GHB Home Center</small></span>
       </a>
       <nav class="nav-links" aria-label="หัวข้อ">
         <a href="#catalog">คลังทรัพย์</a>
@@ -29,6 +29,7 @@
         <a href="#play">ลองเล่น</a>
         <a href="#models">โมเดล</a>
         <a href="#machines">เครื่อง</a>
+        <a href="#dgx">DGX Spark</a>
         <a href="#price">ราคา</a>
         <a href="#scope">สโคป</a>
         <a href="#train">เทรน</a>
@@ -42,8 +43,8 @@
       <section class="hero">
         <div>
           <p class="kicker">GHB Home Center · ธนาคารอาคารสงเคราะห์</p>
-          <h1>ช่วยเลือกทรัพย์ จากประโยคภาษาไทย บนเครื่องของธนาคาร</h1>
-          <p class="lede">ลูกค้าบอกงบ ทำเล และแบบบ้านที่อยากได้ ระบบรวมทุกค่าแล้วจัดอันดับจากคลังบ้านมือสอง ผู้เลือกคือสูตรคะแนน โมเดลภาษาทำหน้าที่เข้าใจประโยคและอธิบายผล ราคากับรหัสทรัพย์มาจากฐานข้อมูล</p>
+          <h1>หา AI model มาช่วยเลือกทรัพย์</h1>
+          <p class="lede">งานนี้คือหาโมเดล AI ที่อ่านภาษาไทยได้ แล้วช่วยเลือกบ้านจากงบ ทำเล และแบบที่อยากได้ ตัวเรียงอันดับคือสูตรคะแนน โมเดลช่วยเข้าใจประโยคและอธิบายผล</p>
           <div class="actions">
             <a class="btn primary" href="#play">ลองเลือกทรัพย์ตัวอย่าง</a>
             <a class="btn" href="#offer">ดูชุดที่ควรเสนอ</a>
@@ -367,10 +368,60 @@
             </ul>
           </article>
         </div>
-        <div class="callout warn">
-          <h3>ถ้าฝ่ายไอทีไม่รับการ์ดเกมมิ่ง</h3>
-          <p>GeForce ไม่มีหน่วยความจำแบบ ECC และแบ่งการ์ดให้หลายงานอย่างเป็นทางการไม่ได้ ถ้าธนาคารกำหนดให้ใช้การ์ดศูนย์ข้อมูล ให้ขอใบเสนอ NVIDIA L40S จากตัวแทนจำหน่าย ราคาอยู่หลักแสนกลางถึงประมาณห้าแสน โมเดลชุดเดิมรันได้ ปลั๊ก 220 โวลต์รับเครื่องเดียวได้ ควรมีเครื่องสำรองไฟ และไม่ควรใช้วงจรเดียวกับเครื่องปรับอากาศเมื่อมีการ์ดสองใบ</p>
+        <div class="callout info">
+          <h3>เครื่องที่ฝ่ายไอทีรับได้ คือ NVIDIA DGX Spark</h3>
+          <p>Leadtek NVIDIA DGX Spark ไม่ใช่การ์ด GeForce สำหรับเล่นเกม เป็นคอมพิวเตอร์ AI สำเร็จรูป ชิป GB10 Grace Blackwell หน่วยความจำรวม 128 GB รัน Typhoon 2.5 รุ่น 30B พร้อม bge-m3 และตัวจัดอันดับซ้ำในเครื่องเดียวกันได้ รายละเอียดสเปกและราคาอยู่หัวข้อถัดไป</p>
         </div>
+      </section>
+
+      <section id="dgx">
+        <div class="section-head">
+          <p class="kicker">เครื่องสำหรับงานในธนาคาร</p>
+          <h2>Leadtek NVIDIA DGX Spark ใช้กับงานนี้ได้</h2>
+          <p>ใช้เมื่อห้ามใช้การ์ดจอเกมมิ่ง เครื่องนี้เป็นเดสก์ท็อป AI ของ NVIDIA จำหน่ายผ่าน Leadtek ระบบปฏิบัติการ NVIDIA DGX OS ซึ่งเป็นลินุกซ์พร้อมชุดซอฟต์แวร์ AI รัน Ollama หรือ vLLM ได้ในเครื่อง</p>
+        </div>
+        <div class="callout info">
+          <h3>รันโมเดลชุดนี้ได้</h3>
+          <p>หน่วยความจำรวม 128 GB พอสำหรับ Typhoon 2.5 30B แบบ 4-bit ซึ่งใช้ประมาณ 17–20 GB และยังเหลือที่ให้ bge-m3 กับ bge-reranker-v2-m3 ทำงานคู่กัน NVIDIA ระบุว่ารุ่น 128 GB รันโมเดลได้ถึงราว 200B พารามิเตอร์เมื่อควอนไทซ์ และ fine-tune ได้ถึงราว 70B ความเร็วต่อโทเค็นต่ำกว่า RTX 5090 เพราะแบนด์วิดท์หน่วยความจำ 273 GB/s เหมาะกับเจ้าหน้าที่สาขาและเครื่องมือภายใน ถ้าคนใช้พร้อมกันทั้งวันให้มีคิว</p>
+        </div>
+        <h3>สเปก Leadtek NVIDIA DGX Spark</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>รายการ</th><th>สเปก</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>ชื่อสินค้า</td><td>AI COMPUTER LEADTEK NVIDIA DGX SPARK (1Y)</td></tr>
+              <tr><td>ชิป</td><td>NVIDIA GB10 Grace Blackwell Superchip</td></tr>
+              <tr><td>ซีพียู</td><td>Arm 20 คอร์ แบ่งเป็น Cortex-X925 10 คอร์ และ Cortex-A725 10 คอร์</td></tr>
+              <tr><td>จีพียู</td><td>NVIDIA Blackwell, Tensor Core รุ่นที่ 5</td></tr>
+              <tr><td>พลัง AI</td><td>สูงสุด 1 petaFLOP ที่ FP4 แบบ sparsity หรือราว 1,000 TOPS</td></tr>
+              <tr><td>หน่วยความจำ</td><td>128 GB LPDDR5X แบบรวม ซีพียูกับจีพียูใช้ร่วมกัน แบนด์วิดท์ 273 GB/s</td></tr>
+              <tr><td>ที่เก็บข้อมูล</td><td>SSD 4 TB PCIe Gen5 NVMe เข้ารหัสในตัว</td></tr>
+              <tr><td>ระบบปฏิบัติการ</td><td>NVIDIA DGX OS</td></tr>
+              <tr><td>เครือข่าย</td><td>RJ-45 10 GbE, ConnectX-7 ที่ 200 Gbps, Wi-Fi 7, Bluetooth 5.4</td></tr>
+              <tr><td>พอร์ต</td><td>HDMI 2.1a 1 ช่อง, USB Type-C 4 ช่อง</td></tr>
+              <tr><td>ไฟ</td><td>แหล่งจ่าย 240 วัตต์ ชิป GB10 ใช้ไฟออกแบบ 140 วัตต์ ใช้ปลั๊กบ้านได้</td></tr>
+              <tr><td>ขนาดและน้ำหนัก</td><td>150 x 150 x 50.5 มม. หนัก 1.2 กก.</td></tr>
+              <tr><td>ประกันรุ่น 1Y</td><td>1 ปี ตามรหัสสินค้าที่ร้านระบุ (1Y)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>ราคาในร้านไทย</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>ร้าน</th><th>รุ่น</th><th class="num">ราคา (บาท)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>iHAVECPU</td><td>LEADTEK NVIDIA DGX SPARK (1Y) 128 GB, SSD 4 TB</td><td class="num">219,000</td></tr>
+              <tr><td>JIB</td><td>Leadtek DGX Spark 4 TB ประกัน 1 ปี</td><td class="num">219,900</td></tr>
+              <tr><td>Advice</td><td>รหัส 126X6000000</td><td class="num">219,990</td></tr>
+              <tr><td>Gearlab</td><td>LEADTEK DGX SPARK ต้องยืนยันสต็อกและราคาก่อนสั่ง</td><td class="num">199,900</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fine">ราคาเช็กจากหน้าร้านช่วง 1 พ.ย. 2569 ถึงกลางเดือนเดียวกัน ราคาย้ายได้ ก่อนสั่งให้ขอใบเสนอจาก Leadtek หรือร้านอีกครั้ง สเปกชิปอ้างอิงหน้า NVIDIA DGX Spark</p>
       </section>
 
       <section id="price">
